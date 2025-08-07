@@ -1,0 +1,89 @@
+專案執行總綱 （v1.0）
+第一階段：奠基與驗證 （Foundation & Validation）
+預估時程： 第 1 - 3 個月
+
+核心目標： 將專案從一個想法，成功轉變為一個擁有核心原型、創始文件與初期社群關注的公開開源專案。
+
+關鍵里程碑與交付物：
+
+[✓] 倉庫初始化： 建立  公開 GitHub 倉庫，並提交所有創始文件（, , , , , ）。governable-aiLICENSEREADME.mdVISION.mdPROJECT_PLAN.mdCONTRIBUTING.mdCODE_OF_CONDUCT.md
+
+[✓] 原型發布： 提交  核心決策環路原型腳本。poc/tonesoul_poc.py
+
+公開亮相： 在「方格子」等平台發表「創始宣言」文章，正式向世界介紹專案，並附上倉庫連結。
+
+社群啟動： 建立專案的 GitHub Pages 門戶，並透過 GitHub Issues 開始收集、回應社群的初期回饋與驗證結果。
+
+技術焦點： 專案管理、文檔撰寫、社群溝通、原型驗證。
+
+第二階段：核心功能服務化 （Core Functionality as a Service）
+預估時程： 第 4 - 9 個月
+
+核心目標： 將原型腳本進化為一套結構穩健、可自動化測試、可供其他服務調用的核心API。
+
+關鍵里程碑與交付物：
+
+政策庫 (The Law): 完成模組化的 （Rego 庫），建立 GitHub Actions CI/CD 流程，實現政策的自動化測試。policy-lib
+
+責任鏈 (The Auditor): 完成  的數據模型定義，並實作  來捕獲 OPA 的決策追溯日誌，實現責任的可追溯性。ToneTraceEntryopa_middleware
+
+核心引擎 (The Engine): 將  和 （v1.0, 基於LLM Prompt）重構為一個專業的 Python 套件 ( v0.1.0)。SemanticVowMatcherToneRewriteEnginegovernable_ai
+
+服務接口 (The API): 使用 FastAPI 搭建 Web 服務，向上提供  等核心 API 端點。/v1/correct_tone
+
+MLOps 基礎: 建立基礎的日誌管道，將  結構化地輸出到檔案或控制台。ToneTraceEntry
+
+技術焦點：Python 套件開發、FastAPI、OPA/Rego、SBERT、CI/CD、基礎 Observability。
+
+第三階段：智慧的湧現與適應 （Emergence of Intelligence &; Adaptation）
+預估時程： 第 10 - 15 個月
+
+核心目標： 讓系統從基於規則的修正，進化為具備智慧權衡與情境適應能力的「活系統」。
+
+關鍵里程碑與交付物：
+
+多目標優化：  升級至 v2.0，引入  等演算法，實現對「誠實度」、「語氣貼合度」、「創意度」的動態權衡。ToneRewriteEngineNSGA-II
+
+人格感知：  模型（v1.0）實作完成，系統能夠從對話歷史中初步推斷使用者的互動風格。Persona Vector
+
+動態語氣生成： 完成第一批  的訓練，並實作  機制，使 AI 能根據  動態混合生成語氣。LoRA-Tone AdapterAdapter MixingPersona Vector
+
+數據閉環： 建立「三層解耦式標註框架」的 UI 與流程，開始積累第一批高品質的跨文化標註數據，為模型的持續迭代提供養分。
+
+技術焦點： 多目標優化演算法、LoRA/Adapter 微調、數據標註與管理、進階 NLP。
+
+第四階段：代理的自主與規劃 （Agent Autonomy & Planning）
+預估時程： 第 16 - 21 個月
+
+核心目標： 將系統從一個「回應修正器」，升級為一個能夠理解複雜目標並自主規劃行動的「AI 代理」。
+
+關鍵里程碑與交付物：
+
+知識建模： 針對一個具體的應用場景（如醫療助理），完成  domain 的定義。PDDL
+
+語言到規劃的橋樑： 搭建一個能將自然語言需求，自動轉化為  描述的 LLM 流水線。PDDL problem
+
+混合式推理引擎： 成功整合符號規劃器（如 FastDownward）、價值層（OPA）與回饋層（Reward Model），實現完整的「感知-規劃-行動」循環。
+
+端到端自主代理 Demo： 展示一個完整的、能夠自主規劃並遵守價值誓言的 AI 代理原型。
+
+技術焦點： 符號 AI （PDDL）、混合式規劃、AI 代理架構 （Agent Architecture）。
+
+第五階段：生態的建立與擴展 （Ecosystem Building & Expansion）
+預估時程： 第 22 - 24 個月及以後
+
+核心目標： 將  從一個成功的開源專案，轉變為一個具備自我造血能力、能吸引廣泛貢獻的開放生態系統。governable-ai
+
+關鍵里程碑與交付物：
+
+正式版發布： 發布  框架的 1.0.0 穩定版本。governable-ai
+
+插件系統： 實作並完善我們討論過的插件架構，讓社群可以輕鬆地貢獻新的「誓言驗證器」或「責任模型」。
+
+社群貢獻： 專案中出現至少2-3個由核心團隊之外的社群成員貢獻的關鍵功能或插件。
+
+學術影響力： 發表一篇高品質的技術白皮書或學術論文，分享  的架構與實驗成果。governable-ai
+
+合作夥伴： 與至少一個學術實驗室或相關開源專案建立正式的合作關係。
+
+技術焦點： 社群運營、開發者關係、API 穩定性設計、學術寫作。
