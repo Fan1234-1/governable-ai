@@ -70,6 +70,7 @@
 回饋層 (Reward Layer): 系統的「價值觀」。 使用經  訓練的偏好模型，為不同的行動方案評分，引導系統做出「更好」的選擇。RLHF
 
 3. 核心技術規格 （Key Technical Specifications）
+   
 3.1. 語氣向量 （ToneVector）：
 
 定義: 一個描述語言行為的向量 。[ΔT, ΔS, ΔR]
