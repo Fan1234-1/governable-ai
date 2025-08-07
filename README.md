@@ -18,6 +18,18 @@ Traditional programming treats AI as a tool to be commanded. The Governable AI f
 3.  **Self-Correction (自我修正):** The system uses reflective loops and multi-objective optimization to find the best course of action that satisfies both its goals and its value constraints, and can actively rewrite its own output to be more compliant.
 
 For a deep dive into the philosophy and technical underpinnings, please read our **[Vision Whitepaper](./VISION.md)**.
+---
+
+## 🏛️ Architectural Blueprints
+
+This project is built on a comprehensive and robust architecture designed for the next generation of trustworthy AI. We invite experts and enthusiasts to review our detailed design documents for a feasibility analysis and to provide feedback.
+
+* **[<code>📄</code> 01 - System Architecture](./docs/01_SYSTEM_ARCHITECTURE.md):** The overall multi-layer architecture, from the LLM interface to the policy, planning, and feedback layers.
+* **[<code>📊</code> 02 - Observability & MLOps](./docs/02_OBSERVABILITY_AND_MLOPS.md):** Our plan for a production-grade, traceable logging and monitoring pipeline using OpenTelemetry.
+* **[<code>🔧</code> 03 - Self-Correction Engine](./docs/03_SELF_CORRECTION_ENGINE.md):** The design of the core loop for detecting vow violations and automatically rewriting outputs.
+* **[<code>🧪</code> 04 - Benchmarking & Evaluation](./docs/04_BENCHMARKING_AND_EVALUATION.md):** The specification for the `ToneSoul Benchmark` dataset and our automated evaluation harness.
+* **[<code>📦</code> 05 - Governance & Modularity](./docs/05_GOVERNANCE_AND_MODULES.md):** Our strategy for versioning, open-source collaboration, and the plugin-based module system.
+* **[<code>🗺️</code> 06 - Project Roadmap](./docs/06_ROADMAP.md):** The detailed 1-2 year roadmap for taking this project from concept to a mature ecosystem.
 
 ## 🚀 Proof of Concept
 
